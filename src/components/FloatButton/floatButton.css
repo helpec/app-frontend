@@ -1,0 +1,12 @@
+.panico{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    color: white;
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}

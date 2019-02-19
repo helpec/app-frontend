@@ -3,11 +3,17 @@ import { Link } from 'react-router';
 
 import BasePage from '../BasePage';
 import LastestPosts from '../../components/LastestPosts';
+import { categories } from '../../data_source';
 
-
-class BaseProfilePage extends Component {
+class BaseBlogPage extends Component {
   
   render() {
+    
+    let items = []
+    categories.forEach(function(value, key) {
+      items.push(value)
+    });
+
     return (
       <Fragment>
         <BasePage title={this.props.title}>
@@ -17,14 +23,19 @@ class BaseProfilePage extends Component {
               <div className="row">
                 <div className="span4">
                   <aside className="left-sidebar">
+                    
                     <div className="widget">
-                      <h5 className="widgetheading">NOME</h5>
+                      <h5 className="widgetheading">Caregorias</h5>
                       <ul className="cat">
-                        <li><i className="icon-angle-right"></i><Link to="/profile">DashBoard</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/edit">Editar Perfil</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/contatos">Quem Avisar</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/historico">Histórico de Ocorrências</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/sair">Sair</Link></li>
+                        {items.map((item, i) => {
+                          return (
+                          <li key={i}>
+                            <i className="icon-angle-right"></i>
+                              <Link to={`/saibamais/${item.categorie}/`}>{item.categorieTitle}</Link>
+                                <span> ({item.categorieCount})</span>
+                          </li>
+                          );
+                        })}                     
                       </ul>
                     </div>
                     
@@ -43,4 +54,4 @@ class BaseProfilePage extends Component {
   }
 }
 
-export default BaseProfilePage;
+export default BaseBlogPage;

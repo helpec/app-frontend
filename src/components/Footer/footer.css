@@ -1,0 +1,105 @@
+footer {
+  background: #762386;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: fff;
+}
+
+footer address {
+  line-height: 1.6em;
+}
+
+footer h3 a:hover, footer a:hover {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-network {
+  list-style: none;
+  margin: 0;
+}
+
+ul.social-network li {
+  display: inline;
+}
+
+#sub-footer {
+  background: #0a0a0a;
+  text-shadow: none;
+  color: #5d5d5d;
+  padding: 0;
+  padding-top: 0px;
+}
+
+#sub-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-footer span {
+  color: #c7c7c7;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+#sub-footer ul.social-network {
+  float: right;
+}
+
+/* ===============================
+ Live preview purpose
+================================ */
+
+/* --- buttons --- */
+
+.bs-docs-example {
+  margin: 0 0 10px 0;
+}
+
+.demobtn a.btn {
+  margin: 0 10px 10px 0;
+}
+
+section.demogrid .span1, section.demogrid .span2, section.demogrid .span3, section.demogrid .span4, section.demogrid .span5, section.demogrid .span6, section.demogrid .span7, section.demogrid .span8, section.demogrid .span9, section.demogrid .span10, section.demogrid .span11 {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 20px 0 20px;
+}
+
+section.demogrid .show-grid .row, section.demogrid .show-grid .row-fluid {
+  margin-bottom: 0;
+}
+
+section.demogrid .show-grid .nest {
+  background: #ddd;
+  text-align: center;
+  padding: 20px 0 20px;
+}
+
+section.demogrid .span12.nest {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+.demoinline p {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* --- demo animations --- */
+
+.demo a.btn {
+  margin: 0 10px 10px 0;
+}
