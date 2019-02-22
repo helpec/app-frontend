@@ -27,6 +27,7 @@ ReactDOM.render(
         
         {/* PROFILE */}
         <Route exact path="/login" component={Pages.LoginPage}/>
+        <Route exact path="/registro" component={Pages.RegisterPage}/>
         <PrivateRoute exact path="/profile" component={Pages.ProfilePage} />
         <PrivateRoute exact path="/profile/edit" component={Pages.ProfileEditPage} />
         <PrivateRoute exact path="/profile/contatos" component={Pages.UserContactPage} />

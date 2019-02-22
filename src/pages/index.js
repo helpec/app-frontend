@@ -1,21 +1,26 @@
+//WEBS PAGES
+import HomePage from './webs/HomePage';
+import MitosPage from './webs/MitosPage';
+import AboutPage from './webs/AboutPage';
+import FalandoSobrePage from './webs/FalandoSobrePage';
+import SocorrosPage from './webs/SocorrosPage';
+import ReadPage from './webs/ReadPage';
+import CategoriePage from './webs/CategoriePage';
+import BlogPost from './webs/BlogPost';
+import ContatoPage from './webs/ContatoPage';
 
-import HomePage from './HomePage';
-import MitosPage from './MitosPage';
-import AboutPage from './AboutPage';
-import FalandoSobrePage from './FalandoSobrePage';
-import SocorrosPage from './SocorrosPage';
-import ReadPage from './ReadPage';
-import CategoriePage from './CategoriePage';
-import BlogPost from './BlogPost';
-import ContatoPage from './ContatoPage';
+// PROFILE PAGES
+import ProfilePage from './profiles/ProfilePage';
+import ProfileEditPage from './profiles/ProfileEditPage';
+import OcorrenciaPage from './profiles/OcorrenciaPage';
+import UserContactPage from './profiles/UserContactPage';
 
-import ProfilePage from './ProfilePage';
-import ProfileEditPage from './ProfileEditPage';
-import OcorrenciaPage from './OcorrenciaPage';
-import UserContactPage from './UserContactPage';
-import Logout from './LogoutPage';
+import Logout from './profiles/LogoutPage';
+import LoginPage from './profiles/LoginPage';
+import RegisterPage from './profiles/RegisterPage';
 
-import NotFound from './NotFound';
+// OTHERS
+import NotFound from './bases/NotFound';
 
 const Pages = {
   HomePage,
@@ -32,6 +37,8 @@ const Pages = {
   OcorrenciaPage,
   UserContactPage,
   Logout,
+  LoginPage,
+  RegisterPage,
   NotFound,
 };
 export default Pages
