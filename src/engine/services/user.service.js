@@ -10,8 +10,7 @@ export const userService = {
     login,
     logout,
     register,
-    // getAll,
-    // getById,
+    getById,
     update,
 };
 
@@ -41,23 +40,14 @@ function logout() {
     localStorage.removeItem('user');
 }
 
-// function getAll() {
-//     const requestOptions = {
-//         method: 'GET',
-//         headers: authHeader()
-//     };
+function getById() {
+    const requestOptions = {
+        method: 'GET',
+        headers: { ...authHeader(), 'Content-Type': 'application/json' },
+    };
 
-//     return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
-// }
-
-// function getById() {
-//     const requestOptions = {
-//         method: 'GET',
-//         headers: authHeader()
-//     };
-
-//     return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);
-// }
+    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);
+}
 
 function register(user) {
     const requestOptions = {
@@ -89,10 +79,10 @@ function handleResponse(response) {
                 logout();
                 browserHistory.push('/');
             }
-    
+
             alert(text)
             const error = text || response.statusText;
-            
+
             return Promise.reject(error);
         }
 

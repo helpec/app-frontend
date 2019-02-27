@@ -1,8 +1,7 @@
 import { userConstants } from '../constants';
 import { userService } from '../services';
 import { alertActions } from './';
-// import { history } from '../_helpers';
-// import $ from 'jquery';
+
 
 export const userActions = {
     login,
@@ -10,7 +9,7 @@ export const userActions = {
     register,
     // getAll,
     profileEdit,
-    // getById,
+    getById,
 };
 
 function login(username, password) {
@@ -19,7 +18,7 @@ function login(username, password) {
 
         userService.login(username, password)
             .then(
-                user => { 
+                user => {
                     dispatch(success(user));
                     // history.push('/profile');
                     // close_modal();
@@ -47,12 +46,12 @@ function register(user) {
 
         userService.register(user)
             .then(
-                user => { 
+                user => {
                     dispatch(success(user));
                     // history.push('/profile');
                     dispatch(alertActions.success('Registration successful'));
                     // close_modal();
-            
+
                 },
                 error => {
                     dispatch(failure(error.toString()));
@@ -82,27 +81,27 @@ function register(user) {
 //     function failure(error) { return { type: userConstants.GETALL_FAILURE, error } }
 // }
 
-// function getById() {
-//     return dispatch => {
-//         dispatch(request());
+function getById() {
+    return dispatch => {
+        dispatch(request());
 
-//         userService.getById()
-//             .then(
-//                 user => {
-//                     dispatch(success(user))
-//                     let save_user = JSON.parse(localStorage.getItem('user'));
-                    
-//                     save_user = { ...JSON.parse(user)};
-//                     localStorage.setItem('user', JSON.stringify(save_user));
-//                 },
-//                 error => dispatch(failure(error.toString()))
-//             );
-//     };
+        userService.getById()
+            .then(
+                user => {
+                    dispatch(success(user))
+                    let save_user = JSON.parse(localStorage.getItem('user'));
 
-//     function request(user) { return { type: userConstants.GETBYID_REQUEST, user } }
-//     function success(user) { return { type: userConstants.GETBYID_SUCCESS, user } }
-//     function failure(error) { return { type: userConstants.GETBYID_FAILURE, error } }
-// }
+                    save_user = { ...save_user, ...JSON.parse(user)};
+                    localStorage.setItem('user', JSON.stringify(save_user));
+                },
+                error => dispatch(failure(error.toString()))
+            );
+    };
+
+    function request(user) { return { type: userConstants.GETBYID_REQUEST, user } }
+    function success(user) { return { type: userConstants.GETBYID_SUCCESS, user } }
+    function failure(error) { return { type: userConstants.GETBYID_FAILURE, error } }
+}
 
 function profileEdit(user) {
     return dispatch => {
@@ -110,7 +109,7 @@ function profileEdit(user) {
 
         userService.update(user)
             .then(
-                 user => { 
+                 user => {
                     dispatch(success());
                     dispatch(alertActions.success('Profile Edit successful'));
                 },

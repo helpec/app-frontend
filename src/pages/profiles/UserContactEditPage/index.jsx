@@ -2,19 +2,20 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import InputForm from 'components/InputForm';
-import { userActions } from 'engine/actions';
-import { getUser } from 'engine/helpers';
+import { userContactActions } from 'engine/actions';
+
 
 import BaseProfilePage from 'pages/bases/BaseProfilePage';
 
-class ProfileEditPage extends Component {
-    constructor(props) {
+class UserContactEditPage extends Component {
+
+constructor(props) {
         super(props);
 
-        this.props.dispatch(userActions.getById());
+        // this.props.dispatch(userActions.getById());
 
         this.state = {
-            user: getUser(),
+            contact: {},
             submitted: false
         };
 
@@ -23,43 +24,42 @@ class ProfileEditPage extends Component {
     }
 
     saveValue(data) {
-        this.setState({ user: { ...this.state.user, ...data}});
+        this.setState({ contact: { ...this.state.contact, ...data}});
     }
 
     handleSubmit(event) {
         event.preventDefault();
 
         this.setState({ submitted: true });
-        const { user } = this.state;
+        const { contact } = this.state;
         const { dispatch } = this.props;
 
         if (user) {
             console.log("SALVANDO")
-            dispatch(userActions.profileEdit(user));
+            // dispatch(userActions.profileEdit(user));
             alert("Perfil salvo com sucesso")
         }
     }
 
   render() {
-    const { savingProfile } = this.props;
-    const { user, submitted } = this.state;
+    const { savingContact } = this.props;
+    const { contact, submitted } = this.state;
+
     return (
       <Fragment>
-        <BaseProfilePage title="Editar Meu Perfil">
+        <BaseProfilePage title="Editar Contatos">
 
             <article>
               <div className="row">
                 <div className="span8">
                   <div className="post-image">
                     <div className="post-heading">
-                      <h3>Alterar dados do meu perfil</h3>
+                      <h3>Editar meus contatos de emergencia</h3>
                     </div>
                   </div>
-                    <form onSubmit={this.handleSubmit}>
-                      <InputForm name='name' label="Nome" value={user.firstName}
-                                submitted={submitted} callbeack={this.saveValue}/>
 
-                      <InputForm name="lastName" label="Sobrenome" value={user.lastName}
+                  <form onSubmit={this.handleSubmit}>
+                      <InputForm name='name' label="Nome" value={user.name}
                                 submitted={submitted} callbeack={this.saveValue}/>
 
                       <InputForm name='email' label="E-mail" value={user.email}
@@ -70,7 +70,7 @@ class ProfileEditPage extends Component {
 
                       <div className='form-group'>
                         <button name="submit" type="submit" className="btn btn-primary"
-                          disabled={(savingProfile ? 'disabled' : '')} >Submit</button>
+                          disabled={(savingContact ? 'disabled' : '')} >Submit</button>
                       </div>
                     </form>
 
@@ -85,9 +85,11 @@ class ProfileEditPage extends Component {
 }
 
 function mapStateToProps(state) {
-    const { savingProfile } = state.savingProfile;
+    const { user, contacts } = state.user_contact;
     return {
-        savingProfile
+        user,
+        contacts
     };
 }
-export default connect(mapStateToProps)(ProfileEditPage);
+
+export default connect(mapStateToProps)(UserContactEditPage);

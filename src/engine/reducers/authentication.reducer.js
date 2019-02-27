@@ -1,6 +1,7 @@
 import { userConstants } from '../constants';
+import { getUser } from 'engine/helpers';
 
-let user = JSON.parse(localStorage.getItem('user'));
+let user = getUser();
 const initialState = user ? { loggedIn: true, user } : {};
 
 export function authentication(state = initialState, action) {

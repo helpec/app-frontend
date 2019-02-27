@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { connect } from 'react-redux';
-// import { Redirect } from 'react-router';
 
+
+import BaseProfilePage from 'pages/bases/BaseProfilePage';
 import InputForm from 'components/InputForm';
 import { userActions } from 'engine/actions';
 
@@ -42,34 +43,36 @@ class RegisterPage extends React.Component {
         const { registering  } = this.props;
         const { user, submitted } = this.state;
         return (
-            <div>
-              <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="mySignupModalLabel">Criar novo <strong>perfil</strong></h4>
-              </div>
+            <Fragment>
+                <BaseProfilePage title="Registre-se">
+                  <div className="modal-header">
+                    <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 id="mySignupModalLabel">Criar novo <strong>perfil</strong></h4>
+                  </div>
 
-              <div className="modal-body">
-                <form className="form-horizontal" onSubmit={this.handleSubmit}>
+                  <div className="modal-body">
+                    <form className="form-horizontal" onSubmit={this.handleSubmit}>
 
-                    <InputForm name='username' label="Username" value={user.username}
-                            submitted={submitted} callbeack={this.saveValue}/>
-                    <InputForm name='email' label="E-mail" value={user.email}
-                            submitted={submitted} callbeack={this.saveValue}/>
-                    <InputForm name='password1' label="Senha" value={user.password1}
-                            submitted={submitted} callbeack={this.saveValue}/>
-                    <InputForm name='password2' label="Confirmar Senha" value={user.password2}
-                            submitted={submitted} callbeack={this.saveValue}/>
+                        <InputForm name='username' label="Username" value={user.username}
+                                submitted={submitted} callbeack={this.saveValue}/>
+                        <InputForm name='email' label="E-mail" value={user.email}
+                                submitted={submitted} callbeack={this.saveValue}/>
+                        <InputForm name='password1' label="Senha" value={user.password1}
+                                submitted={submitted} callbeack={this.saveValue}/>
+                        <InputForm name='password2' label="Confirmar Senha" value={user.password2}
+                                submitted={submitted} callbeack={this.saveValue}/>
 
 
-                    <div className="control-group">
-                      <div className="controls">
-                        <button type="submit" className="btn" disabled={(registering ? 'disabled' : '')} >Cadastrar</button>
-                      </div>
+                        <div className="control-group">
+                          <div className="controls">
+                            <button type="submit" className="btn" disabled={(registering ? 'disabled' : '')} >Cadastrar</button>
+                          </div>
 
-                    </div>
-                </form>
-              </div>
-            </div>
+                        </div>
+                    </form>
+                  </div>
+                </BaseProfilePage>
+            </Fragment>
         );
     }
 }

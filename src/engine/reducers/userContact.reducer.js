@@ -1,6 +1,7 @@
 import { contactConstants } from '../constants';
+import { getUser } from 'engine/helpers';
 
-let user = JSON.parse(localStorage.getItem('user'));
+let user = getUser();
 const initialState = user ? { user, contacts: [] } : {};
 
 export function user_contact(state = initialState, action) {
@@ -29,7 +30,7 @@ export function user_contact(state = initialState, action) {
       return {
         user: action.user,
         contacts: []
-      };   
+      };
     case contactConstants.USER_CONTACTS_DELETE:
       return {
         user: action.user,
