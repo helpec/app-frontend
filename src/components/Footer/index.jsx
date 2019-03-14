@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import './footer.css'
 
 class Footer extends Component {
@@ -26,7 +26,7 @@ class Footer extends Component {
                 <i className="icon-envelope-alt"></i> camilam.oliveiralima@gmail.com
               </p>
               </div>
-            </div>  
+            </div>
               <div className="span4">
               <div className="widget">
              <h3 className="widgetheading">Redes Sociais</h3>
@@ -41,7 +41,7 @@ class Footer extends Component {
                </div>
           </div>
         </div>
-      
+
       </footer>
     );
   }

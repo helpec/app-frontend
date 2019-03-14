@@ -1,5 +1,4 @@
-import {browserHistory} from  'react-router';
-import { authHeader } from '../helpers';
+import { history, authHeader } from 'engine/helpers';
 
 export const config = {
     apiUrl: 'https://cesarbruschetta.pythonanywhere.com/api',
@@ -28,7 +27,7 @@ function login(username, password) {
             if (user) {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
                 localStorage.setItem('user', user);
-                browserHistory.push('/profile');
+                history.push('/profile');
             }
 
             return user;
@@ -77,7 +76,7 @@ function handleResponse(response) {
             if (response.status === 401) {
                 // auto logout if 401 response returned from api
                 logout();
-                browserHistory.push('/');
+                history.push('/');
             }
 
             alert(text)

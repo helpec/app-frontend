@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom'
 
 import { getUser } from '../../engine/helpers';
 import './header.css'
 
 
 class Header extends Component {
-  
+
  constructor(props) {
     super(props);
 
     this.state = {
       is_authentication: false
     }
-      
+
   }
   componentDidMount() {
-    
+
     let user = getUser();
     if (user){
        this.setState({
             is_authentication: true
        })
     }
-    
-  }  
-  
+
+  }
+
   render() {
     return (
     <header>
@@ -33,7 +33,7 @@ class Header extends Component {
         <div className="row nomargin">
           <div className="span12">
             { this.state.is_authentication ? (
-              
+
               <div className="headnav">
 						    <ul className="navbar-right">
 				  				<li className="dropdown">

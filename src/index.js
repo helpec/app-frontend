@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import {Router,Route, browserHistory} from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import { store } from './engine/helpers';
+import { store, history } from './engine/helpers';
 import { PrivateRoute } from './components';
 import Pages from './pages';
 import * as serviceWorker from './serviceWorker';
@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   (
     <Provider store={store}>
-      <Router history={browserHistory}>
+      <Router history={history}><div>
 
         <Route exact path='/' component={Pages.HomePage}/>
         <Route exact path='/falandosobre' component={Pages.FalandoSobrePage}/>
@@ -19,12 +19,12 @@ ReactDOM.render(
         <Route exact path='/mitos' component={Pages.MitosPage}/>
         <Route exact path='/socorros' component={Pages.SocorrosPage}/>
         <Route exact path='/contato' component={Pages.ContatoPage}/>
-        
+
         {/* BLOG  */}
         <Route exact path='/saibamais' component={Pages.ReadPage}/>
         <Route exact path='/saibamais/:categorie_uid/' component={Pages.CategoriePage}/>
         <Route exact path='/saibamais/:categorie_uid/:post_uid/' component={Pages.BlogPost}/>
-        
+
         {/* PROFILE */}
         <Route exact path="/login" component={Pages.LoginPage}/>
         <Route exact path="/registro" component={Pages.RegisterPage}/>
@@ -33,8 +33,9 @@ ReactDOM.render(
         <PrivateRoute exact path="/profile/contatos" component={Pages.UserContactPage} />
         <PrivateRoute exact path="/profile/historico" component={Pages.OcorrenciaPage} />
         <PrivateRoute exact path="/profile/sair" component={Pages.Logout} />
-        
+
         <Route path="*" component={Pages.NotFound}/>
+      </div>
       </Router>
     </Provider>
   ),
