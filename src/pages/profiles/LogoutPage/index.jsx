@@ -1,8 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 
-import {removeSessionUser} from 'utils';
-
+import {removeSessionUser} from 'engine/helpers';
 
 class Logout extends React.Component {
 

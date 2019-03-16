@@ -28,3 +28,7 @@ export function getUser() {
         return {};
     }
 }
+
+export function removeSessionUser() {
+    localStorage.removeItem('user')
+}

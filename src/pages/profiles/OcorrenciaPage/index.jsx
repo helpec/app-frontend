@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 import {AreaChart, Area, XAxis, YAxis, } from 'recharts';
 
 import BaseProfilePage from 'pages/bases/BaseProfilePage';
-import {getSessionUser} from 'utils';
+import {getUser} from 'engine/helpers';
 
 class OcorrenciaPage extends Component {
     constructor(props) {
         super(props);
 
-        let user = getSessionUser();
+        let user = getUser();
         this.state = {
             user: user,
         };
