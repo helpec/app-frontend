@@ -1,39 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
-import { getUser } from '../../engine/helpers';
+import { isAuthentication } from '../../engine/helpers';
 import './header.css'
 
 
 class Header extends Component {
-
- constructor(props) {
-    super(props);
-
-    this.state = {
-      is_authentication: false
-    }
-
-  }
-  componentDidMount() {
-
-    let user = getUser();
-    if (user){
-       this.setState({
-            is_authentication: true
-       })
-    }
-
-  }
-
+  
   render() {
     return (
     <header>
       <div className="container ">
         <div className="row nomargin">
           <div className="span12">
-            { this.state.is_authentication ? (
-
+            { isAuthentication() ? (
+              
               <div className="headnav">
 						    <ul className="navbar-right">
 				  				<li className="dropdown">

@@ -65,7 +65,7 @@ function update(user) {
         body: JSON.stringify(user)
     };
 
-    return fetch(`${config.apiUrl}/users/${user.id}`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);;
 }
 
 

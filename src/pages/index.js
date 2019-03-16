@@ -14,6 +14,7 @@ import ProfilePage from './profiles/ProfilePage';
 import ProfileEditPage from './profiles/ProfileEditPage';
 import OcorrenciaPage from './profiles/OcorrenciaPage';
 import UserContactPage from './profiles/UserContactPage';
+import UserContactEditPage from './profiles/UserContactEditPage';
 
 import Logout from './profiles/LogoutPage';
 import LoginPage from './profiles/LoginPage';
@@ -36,6 +37,7 @@ const Pages = {
   ProfileEditPage,
   OcorrenciaPage,
   UserContactPage,
+  UserContactEditPage,
   Logout,
   LoginPage,
   RegisterPage,

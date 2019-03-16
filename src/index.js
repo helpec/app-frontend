@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import {Router, Route } from 'react-router-dom'
 
 import { store, history } from './engine/helpers';
 import { PrivateRoute } from './components';
@@ -31,6 +31,7 @@ ReactDOM.render(
         <PrivateRoute exact path="/profile" component={Pages.ProfilePage} />
         <PrivateRoute exact path="/profile/edit" component={Pages.ProfileEditPage} />
         <PrivateRoute exact path="/profile/contatos" component={Pages.UserContactPage} />
+        <PrivateRoute exact path="/profile/contatos/:contact_uid/" component={Pages.UserContactEditPage} />
         <PrivateRoute exact path="/profile/historico" component={Pages.OcorrenciaPage} />
         <PrivateRoute exact path="/profile/sair" component={Pages.Logout} />
 
