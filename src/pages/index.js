@@ -19,6 +19,7 @@ import UserContactEditPage from './profiles/UserContactEditPage';
 import Logout from './profiles/LogoutPage';
 import LoginPage from './profiles/LoginPage';
 import RegisterPage from './profiles/RegisterPage';
+import ResetPasswordPage from './profiles/ResetPasswordPage';
 
 // OTHERS
 import NotFound from './bases/NotFound';
@@ -40,6 +41,7 @@ const Pages = {
   UserContactEditPage,
   Logout,
   LoginPage,
+  ResetPasswordPage,
   RegisterPage,
   NotFound,
 };

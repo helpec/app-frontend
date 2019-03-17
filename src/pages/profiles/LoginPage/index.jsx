@@ -67,7 +67,7 @@ class LoginPage extends Component {
                   <button type="submit" className="btn" disabled={(loggingIn ? 'disabled' : '')} >Enviar</button>
                 </div>
                 <p className="aligncenter margintop20">
-                  Esqueceu a senha? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
+                  Esqueceu a senha? <a href="/reset-password">Resetar sua senha</a>
                 </p>
               </div>
             </form>

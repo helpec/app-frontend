@@ -17,17 +17,19 @@ class BaseProfilePage extends Component {
               <div className="row">
                 <div className="span4">
                   <aside className="left-sidebar">
-                    <div className="widget">
-                      <h5 className="widgetheading">NOME</h5>
-                      <ul className="cat">
-                        <li><i className="icon-angle-right"></i><Link to="/profile">DashBoard</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/edit">Editar Perfil</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/contatos">Quem Avisar</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/historico">Histórico de Ocorrências</Link></li>
-                        <li><i className="icon-angle-right"></i><Link to="/profile/sair">Sair</Link></li>
-                      </ul>
-                    </div>
-
+                    { !this.props.notUserNav ? (
+                      <div className="widget">
+                        <h5 className="widgetheading">NOME</h5>
+                        <ul className="cat">
+                          <li><i className="icon-angle-right"></i><Link to="/profile">DashBoard</Link></li>
+                          <li><i className="icon-angle-right"></i><Link to="/profile/edit">Editar Perfil</Link></li>
+                          <li><i className="icon-angle-right"></i><Link to="/profile/contatos">Quem Avisar</Link></li>
+                          <li><i className="icon-angle-right"></i><Link to="/profile/historico">Histórico de Ocorrências</Link></li>
+                          <li><i className="icon-angle-right"></i><Link to="/profile/sair">Sair</Link></li>
+                        </ul>
+                      </div>
+                      ) : (<div></div>) 
+                    }
                     <LastestPosts />
                   </aside>
                 </div>

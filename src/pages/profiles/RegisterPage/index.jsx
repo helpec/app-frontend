@@ -44,7 +44,7 @@ class RegisterPage extends React.Component {
         const { user, submitted } = this.state;
         return (
             <Fragment>
-                <BaseProfilePage title="Registre-se">
+                <BaseProfilePage title="Registre-se" notUserNav={true}>
                   <div className="modal-header">
                     <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 id="mySignupModalLabel">Criar novo <strong>perfil</strong></h4>

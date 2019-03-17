@@ -33,7 +33,7 @@ class Header extends Component {
             <div>
               <div className="headnav">
                 <ul>
-                   <li><Link to="/register" ><i className="icon-user"></i> Registrar</Link></li>
+                   <li><Link to="/registro" ><i className="icon-user"></i> Registrar</Link></li>
 -                  <li><Link to="/login" ><i className="icon-user"></i>Login</Link></li>
                 </ul>
               </div>
