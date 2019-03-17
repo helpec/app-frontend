@@ -1,9 +1,4 @@
-import { history, authHeader } from 'engine/helpers';
-
-export const config = {
-    apiUrl: 'https://cesarbruschetta.pythonanywhere.com/api',
-};
-
+import { history, authHeader, config } from 'engine/helpers';
 
 export const userService = {
     login,

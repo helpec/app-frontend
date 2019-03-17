@@ -1,9 +1,4 @@
-import { authHeader, history, getUser } from '../helpers';
-
-export const config = {
-    apiUrl: 'https://cesarbruschetta.pythonanywhere.com/api',
-};
-
+import { authHeader, history, getUser, config } from '../helpers';
 
 export const userContactService = {
     contacts,

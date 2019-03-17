@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Header da aplicação 1`] = `
+<header>
+  <div
+    className="container "
+  >
+    <div
+      className="row nomargin"
+    >
+      <div
+        className="span12"
+      >
+        <div>
+          <div
+            className="headnav"
+          >
+            <ul>
+              <li>
+                <a
+                  href="/register"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="icon-user"
+                  />
+                   Registrar
+                </a>
+              </li>
+              -                  
+              <li>
+                <a
+                  href="/login"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="icon-user"
+                  />
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="span4"
+      >
+        <div
+          className="logo"
+        >
+          <img
+            alt=""
+            className="logo"
+            src="/assets/img/logo.png"
+          />
+          <h1
+            className="logo h1"
+          >
+            Helpec - Help Epilepsia e Convulsão 
+          </h1>
+        </div>
+      </div>
+      <div
+        className="span8"
+      >
+        <div
+          className="navbar navbar-static-top"
+        >
+          <div
+            className="navigation"
+          >
+            <nav>
+              <ul
+                className="nav topnav"
+              >
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-cog"
+                    />
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/quemsomos"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-cog"
+                    />
+                    Quem somos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/falandosobre"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-cog"
+                    />
+                    Falando sobre
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/socorros"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-cog"
+                    />
+                    Primeiros Socorros
+                  </a>
+                </li>
+                <li
+                  className="dropdown"
+                >
+                  <a
+                    href="#"
+                  >
+                    Saiba Mais
+                    <i
+                      className="icon-angle-down"
+                    />
+                  </a>
+                  <ul
+                    className="dropdown-menu"
+                  >
+                    <li>
+                      <a
+                        href="/saibamais"
+                        onClick={[Function]}
+                      >
+                        <i
+                          className="fa fa-cog"
+                        />
+                        Artigos
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/mitos"
+                        onClick={[Function]}
+                      >
+                        <i
+                          className="fa fa-cog"
+                        />
+                        Mitos e Verdades
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="/contato"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-cog"
+                    />
+                    Contato
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;

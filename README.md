@@ -1,4 +1,5 @@
 # HelPec FrontEnd
 
+[![Build Status](https://travis-ci.org/helpec/app-frontend.svg?branch=master)](https://travis-ci.org/helpec/app-frontend)
 
-http://jasonwatmore.com/post/2017/12/07/react-redux-jwt-authentication-tutorial-example
+## 
