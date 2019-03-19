@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import BasePage from 'pages/bases/BasePage';
 import Slider from 'components/Slider';
 
-import './home.css'
-import Grafico from './grafico.jpeg'
-import Alerta from './panico.jpeg'
-import Home from './home.jpeg'
+import './assets/home.css'
+import Grafico from './assets/grafico.jpeg'
+import Alerta from './assets/panico.jpeg'
+import Home from './assets/home.jpeg'
 
 class HomePage extends Component {
 

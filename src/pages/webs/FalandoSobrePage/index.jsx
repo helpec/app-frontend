@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react';
 
 import BasePage from 'pages/bases/BasePage';
 
-import Crises from './crises.jpeg';
-import Infografico from './infografico.jpeg';
-import './falandosobre.css'
+import Crises from './assets/crises.jpeg';
+import Infografico from './assets/infografico.jpeg';
+import './assets/falandosobre.css'
 
 class FalandoSobrePage extends Component {
 

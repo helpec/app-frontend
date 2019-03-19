@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import BasePage from 'pages/bases/BasePage';
 
-import Autora from './autora.jpg';
-import Logo from './logo.png';
-import './aboutpage.css';
+import Autora from './assets/autora.jpg';
+import Logo from './assets/logo.png';
+import './assets/aboutpage.css';
 
 class AboutPage extends Component {
 

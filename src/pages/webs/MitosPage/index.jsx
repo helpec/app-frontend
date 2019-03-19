@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import BasePage from 'pages/bases/BasePage';
 
-import './mitos.css'
+import './assets/mitos.css'
 
 class MitosPage extends Component {
 

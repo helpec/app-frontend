@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 
 import BasePage from 'pages/bases/BasePage';
 
-import Dicas from './dicas.jpeg';
-import './socorros.css'
+import Dicas from './assets/dicas.jpeg';
+import './assets/socorros.css'
 
 class SocorrosPage extends Component {
 
