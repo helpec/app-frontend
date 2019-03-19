@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import renderer from 'react-test-renderer';
 
-import Header from 'components/Header';
+import Footer from '.';
 
-test('Testar componente de Header da aplicação', () => {
+test('Testar componente de Footer da aplicação', () => {
 
     const component = renderer.create(
       <BrowserRouter>
-        <Header />
+        <Footer />
       </BrowserRouter>
     );
-    
+
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 

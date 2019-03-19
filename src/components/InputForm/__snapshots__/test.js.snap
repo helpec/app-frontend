@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de InputForm da aplicação 1`] = `
+<div
+  className="control-group"
+>
+  <label
+    className="control-label"
+  >
+     
+     
+  </label>
+  <div
+    className="controls"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;

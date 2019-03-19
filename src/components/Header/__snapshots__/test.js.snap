@@ -18,7 +18,7 @@ exports[`Testar componente de Header da aplicação 1`] = `
             <ul>
               <li>
                 <a
-                  href="/register"
+                  href="/registro"
                   onClick={[Function]}
                 >
                   <i

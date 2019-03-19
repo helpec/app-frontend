@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de HeadLine da aplicação 1`] = `
+<section
+  id="inner-headline"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="span4"
+      >
+        <div
+          className="inner-heading"
+        >
+          <h2>
+            Teste componente
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

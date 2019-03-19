@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar componente de Footer da aplicação 1`] = `
+<footer>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="span4"
+      >
+        <div
+          className="widget"
+        >
+          <h3
+            className="widgetheading"
+          >
+            Nossas Páginas
+          </h3>
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                href="/quemsomos"
+                onClick={[Function]}
+              >
+                Quem somos
+              </a>
+            </li>
+            <li>
+              <a
+                href="/falandosobre"
+                onClick={[Function]}
+              >
+                Falando Sobre
+              </a>
+            </li>
+            <li>
+              <a
+                href="/socorros"
+                onClick={[Function]}
+              >
+                Primeiro Socorros
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className="span4"
+      >
+        <div
+          className="widget"
+        >
+          <h3
+            className="widgetheading"
+          >
+            Fale conosco
+          </h3>
+          <p>
+            <i
+              className="icon-phone"
+            />
+             (11) 98232-6391 
+            <br />
+            <i
+              className="icon-envelope-alt"
+            />
+             camilam.oliveiralima@gmail.com
+          </p>
+        </div>
+      </div>
+      <div
+        className="span4"
+      >
+        <div
+          className="widget"
+        >
+          <h3
+            className="widgetheading"
+          >
+            Redes Sociais
+          </h3>
+          <ul
+            className="social-network"
+          >
+            <li>
+              <a
+                data-placement="bottom"
+                href="https://www.facebook.com/"
+                title="Facebook"
+              >
+                <i
+                  className="icon-facebook icon-square"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                data-placement="bottom"
+                href="https://www.linkedin.com/in/camilamlima/"
+                title="Linkedin"
+              >
+                <i
+                  className="icon-linkedin icon-square"
+                />
+              </a>
+            </li>
+            <span>
+              &Camila Lima - Todos os direitos reservados.
+            </span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
