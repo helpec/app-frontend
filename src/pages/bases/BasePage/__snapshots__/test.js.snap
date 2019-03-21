@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar base page BasePage 1`] = `
+<div
+  id="wrapper"
+>
+  <header>
+    <div
+      className="container "
+    >
+      <div
+        className="row nomargin"
+      >
+        <div
+          className="span12"
+        >
+          <div>
+            <div
+              className="headnav"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/registro"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                     Registrar
+                  </a>
+                </li>
+                -                  
+                <li>
+                  <a
+                    href="/login"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="logo"
+          >
+            <img
+              alt=""
+              className="logo"
+              src="/assets/img/logo.png"
+            />
+            <h1
+              className="logo h1"
+            >
+              Helpec - Help Epilepsia e Convulsão 
+            </h1>
+          </div>
+        </div>
+        <div
+          className="span8"
+        >
+          <div
+            className="navbar navbar-static-top"
+          >
+            <div
+              className="navigation"
+            >
+              <nav>
+                <ul
+                  className="nav topnav"
+                >
+                  <li>
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/quemsomos"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Quem somos
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/falandosobre"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Falando sobre
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/socorros"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Primeiros Socorros
+                    </a>
+                  </li>
+                  <li
+                    className="dropdown"
+                  >
+                    <a
+                      href="#"
+                    >
+                      Saiba Mais
+                      <i
+                        className="icon-angle-down"
+                      />
+                    </a>
+                    <ul
+                      className="dropdown-menu"
+                    >
+                      <li>
+                        <a
+                          href="/saibamais"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Artigos
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/mitos"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Mitos e Verdades
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/contato"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Contato
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section
+    id="inner-headline"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="inner-heading"
+          >
+            <h2 />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Nossas Páginas
+            </h3>
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  href="/quemsomos"
+                  onClick={[Function]}
+                >
+                  Quem somos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/falandosobre"
+                  onClick={[Function]}
+                >
+                  Falando Sobre
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/socorros"
+                  onClick={[Function]}
+                >
+                  Primeiro Socorros
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Fale conosco
+            </h3>
+            <p>
+              <i
+                className="icon-phone"
+              />
+               (11) 98232-6391 
+              <br />
+              <i
+                className="icon-envelope-alt"
+              />
+               camilam.oliveiralima@gmail.com
+            </p>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Redes Sociais
+            </h3>
+            <ul
+              className="social-network"
+            >
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                >
+                  <i
+                    className="icon-facebook icon-square"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.linkedin.com/in/camilamlima/"
+                  title="Linkedin"
+                >
+                  <i
+                    className="icon-linkedin icon-square"
+                  />
+                </a>
+              </li>
+              <span>
+                &Camila Lima - Todos os direitos reservados.
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button
+    className="panico"
+    onClick={[Function]}
+    type="button"
+  >
+     Pânico
+  </button>
+</div>
+`;

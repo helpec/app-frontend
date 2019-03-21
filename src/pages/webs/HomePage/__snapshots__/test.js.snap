@@ -1,0 +1,699 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar pagina web HomePage 1`] = `
+<div
+  id="wrapper"
+>
+  <header>
+    <div
+      className="container "
+    >
+      <div
+        className="row nomargin"
+      >
+        <div
+          className="span12"
+        >
+          <div>
+            <div
+              className="headnav"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/registro"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                     Registrar
+                  </a>
+                </li>
+                -                  
+                <li>
+                  <a
+                    href="/login"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="logo"
+          >
+            <img
+              alt=""
+              className="logo"
+              src="/assets/img/logo.png"
+            />
+            <h1
+              className="logo h1"
+            >
+              Helpec - Help Epilepsia e Convulsão 
+            </h1>
+          </div>
+        </div>
+        <div
+          className="span8"
+        >
+          <div
+            className="navbar navbar-static-top"
+          >
+            <div
+              className="navigation"
+            >
+              <nav>
+                <ul
+                  className="nav topnav"
+                >
+                  <li>
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/quemsomos"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Quem somos
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/falandosobre"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Falando sobre
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/socorros"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Primeiros Socorros
+                    </a>
+                  </li>
+                  <li
+                    className="dropdown"
+                  >
+                    <a
+                      href="#"
+                    >
+                      Saiba Mais
+                      <i
+                        className="icon-angle-down"
+                      />
+                    </a>
+                    <ul
+                      className="dropdown-menu"
+                    >
+                      <li>
+                        <a
+                          href="/saibamais"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Artigos
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/mitos"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Mitos e Verdades
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/contato"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Contato
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section
+    id="inner-headline"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="inner-heading"
+          >
+            <h2>
+              Seu site de ajuda
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="header"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span12"
+        >
+          <h2
+            className="introducao"
+          >
+            Helpec - 
+            <strong>
+              Help Epilepsia e Convulsão
+            </strong>
+          </h2>
+          <p
+            className="apresentacao"
+          >
+            A Helpec surgiu com a proposta de diseminar informações, esclarecer dúvidas sobre convulsões e epilepsias, buscando assim ajudar tanto pacientes, como familiares e amigos e dessa forma podendo diminuir e até evitar todo o preconceito referente ao assunto.
+          </p>
+          <br />
+          <p
+            className="apresentacao"
+          >
+            Além disso, através do nosso site o usuário cadastrado poderá consultar material de primeiros socorros, principais características e informações de crises convulsivas e epiléticas, como também artigos e links externos relacionados ao assunto e ainda na página de perfil poderá editar seu perfil com maiores informações ou alteração de senha e nome, cadastrar os contatos para receber a mensagem de notificação de pânico e também registrar as ocorrências de crises mensais ou anuais expressa através de gráfico
+          </p>
+          <br />
+          <div
+            className="row"
+          >
+            <div
+              className="span6"
+            >
+              <img
+                className="Grafico"
+                src={[Function]}
+              />
+            </div>
+            <div
+              className="span6"
+            >
+              <img
+                className="Grafico"
+                src={[Function]}
+              />
+            </div>
+          </div>
+          <p
+            className="apresentacao"
+          >
+            Temos como meta para 2019 disponibilizar nosso protótipo como aplicativo tanto Android como IOS a fim de ajudar aos pacientes com um simples toque no botão de pânico, o responsável ou a pessoa cadastrada receberá a notificação da ocorrência e assim poder prestará ajudar e tomar as medidas necessárias para melhor socorrer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="span12"
+      >
+        <div
+          className="solidline"
+        />
+      </div>
+    </div>
+  </div>
+  <section
+    id="content"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span12"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="span4"
+            >
+              <div
+                className="box aligncenter"
+              >
+                <div
+                  className="aligncenter icon"
+                >
+                  <i
+                    className="icon-group icon-circled icon-64 active"
+                  />
+                </div>
+                <div
+                  className="text"
+                >
+                  <h6>
+                    Missão
+                  </h6>
+                  <p>
+                    Nossa missão e disseminar e esclarecer dúvidas, primeiros socorros...
+                  </p>
+                  <a
+                    href="/quemsomos"
+                    onClick={[Function]}
+                  >
+                    Saiba Mais
+                  </a>
+                                          
+                </div>
+              </div>
+            </div>
+            <div
+              className="span4"
+            >
+              <div
+                className="box aligncenter"
+              >
+                <div
+                  className="aligncenter icon"
+                >
+                  <i
+                    className="icon-heart icon-circled icon-64 active"
+                  />
+                </div>
+                <div
+                  className="text"
+                >
+                  <h6>
+                    Visão
+                  </h6>
+                  <p>
+                    Como visão estamos propondo o uso da tecnologia a nosso favor com a criação...
+                  </p>
+                  <a
+                    href="/quemsomos"
+                    onClick={[Function]}
+                  >
+                    Saiba Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="span4"
+            >
+              <div
+                className="box aligncenter"
+              >
+                <div
+                  className="aligncenter icon"
+                >
+                  <i
+                    className="icon-trophy icon-circled icon-64 active"
+                  />
+                </div>
+                <div
+                  className="text"
+                >
+                  <h6>
+                    Valores
+                  </h6>
+                  <p>
+                    Dentre nossos valores estão a respeito e diminuir o preconceito contra os portadores...
+                  </p>
+                  <a
+                    href="/quemsomos"
+                    onClick={[Function]}
+                  >
+                    Saiba Mais
+                  </a>
+                                          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="span12"
+      >
+        <div
+          className="solidline"
+        />
+      </div>
+    </div>
+  </div>
+  <section
+    id="featured"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span5"
+        >
+          <img
+            className="Helpec"
+            src={[Function]}
+          />
+        </div>
+        <div
+          className="span7 featured-slide"
+        >
+          <div
+            id="nivo-slider"
+          >
+            <div
+              className="nivo-slider"
+            >
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-1.jpg"
+                title="#caption-1"
+              />
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-2.jpg"
+                title="#caption-2"
+              />
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-3.jpg"
+                title="#caption-3"
+              />
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-4.jpg"
+                title="#caption-4"
+              />
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-5.jpg"
+                title="#caption-5"
+              />
+              <img
+                alt=""
+                src="/assets/img/slides/nivo/bg-6.jpg"
+                title="#caption-6"
+              />
+            </div>
+            <div
+              className=""
+            >
+              <div
+                className="nivo-caption"
+                id="caption-1"
+              >
+                <div>
+                  <h2>
+                    <strong>
+                      Login
+                    </strong>
+                  </h2>
+                  <p>
+                    Aqui nosso usuário poderá logar e acessar seu perfil com maiores informações.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="nivo-caption"
+                id="caption-2"
+              >
+                <div>
+                  <h2>
+                    <strong>
+                      Criar conta
+                    </strong>
+                  </h2>
+                  <p>
+                    Cadastre sua conta e crie seu perfil.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="nivo-caption"
+                id="caption-3"
+              >
+                <div>
+                  <h2>
+                     
+                    <strong>
+                      Quem Somos
+                    </strong>
+                  </h2>
+                  <p>
+                    Saiba quais são a Missão, Visão e Valor da 
+                    <strong>
+                      Helpec!
+                    </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                className="nivo-caption"
+                id="caption-4"
+              >
+                <div>
+                  <h2>
+                    <strong>
+                      Perfil
+                    </strong>
+                  </h2>
+                  <p>
+                    Veja e atualize os contatos e dados do seu perfil.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="nivo-caption"
+                id="caption-5"
+              >
+                <div>
+                  <h2>
+                    <strong>
+                      Saiba Mais
+                    </strong>
+                  </h2>
+                  <p>
+                    Quer se informar melhor do assunto, veja nosso material no Saiba Mais.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="nivo-caption"
+                id="caption-6"
+              >
+                <div>
+                  <h2>
+                    <strong>
+                      Primeiros Socorros
+                    </strong>
+                  </h2>
+                  <p>
+                    Aqui você conhece os primeiros passos para oferecer ajuda, saiba o que fazer ou não fazer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Nossas Páginas
+            </h3>
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  href="/quemsomos"
+                  onClick={[Function]}
+                >
+                  Quem somos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/falandosobre"
+                  onClick={[Function]}
+                >
+                  Falando Sobre
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/socorros"
+                  onClick={[Function]}
+                >
+                  Primeiro Socorros
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Fale conosco
+            </h3>
+            <p>
+              <i
+                className="icon-phone"
+              />
+               (11) 98232-6391 
+              <br />
+              <i
+                className="icon-envelope-alt"
+              />
+               camilam.oliveiralima@gmail.com
+            </p>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Redes Sociais
+            </h3>
+            <ul
+              className="social-network"
+            >
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                >
+                  <i
+                    className="icon-facebook icon-square"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.linkedin.com/in/camilamlima/"
+                  title="Linkedin"
+                >
+                  <i
+                    className="icon-linkedin icon-square"
+                  />
+                </a>
+              </li>
+              <span>
+                &Camila Lima - Todos os direitos reservados.
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button
+    className="panico"
+    onClick={[Function]}
+    type="button"
+  >
+     Pânico
+  </button>
+</div>
+`;

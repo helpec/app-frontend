@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testar pagina web SocorrosPage 1`] = `
+<div
+  id="wrapper"
+>
+  <header>
+    <div
+      className="container "
+    >
+      <div
+        className="row nomargin"
+      >
+        <div
+          className="span12"
+        >
+          <div>
+            <div
+              className="headnav"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/registro"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                     Registrar
+                  </a>
+                </li>
+                -                  
+                <li>
+                  <a
+                    href="/login"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="icon-user"
+                    />
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="logo"
+          >
+            <img
+              alt=""
+              className="logo"
+              src="/assets/img/logo.png"
+            />
+            <h1
+              className="logo h1"
+            >
+              Helpec - Help Epilepsia e Convulsão 
+            </h1>
+          </div>
+        </div>
+        <div
+          className="span8"
+        >
+          <div
+            className="navbar navbar-static-top"
+          >
+            <div
+              className="navigation"
+            >
+              <nav>
+                <ul
+                  className="nav topnav"
+                >
+                  <li>
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/quemsomos"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Quem somos
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/falandosobre"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Falando sobre
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/socorros"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Primeiros Socorros
+                    </a>
+                  </li>
+                  <li
+                    className="dropdown"
+                  >
+                    <a
+                      href="#"
+                    >
+                      Saiba Mais
+                      <i
+                        className="icon-angle-down"
+                      />
+                    </a>
+                    <ul
+                      className="dropdown-menu"
+                    >
+                      <li>
+                        <a
+                          href="/saibamais"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Artigos
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/mitos"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-cog"
+                          />
+                          Mitos e Verdades
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/contato"
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="fa fa-cog"
+                      />
+                      Contato
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section
+    id="inner-headline"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="inner-heading"
+          >
+            <h2>
+              Primeiros Socorros
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="container "
+  >
+    <div
+      className="row nomargin"
+    >
+      <div
+        className="span12"
+      >
+        <h5
+          className="atitudes"
+        >
+          <strong>
+             O que fazer:
+          </strong>
+        </h5>
+        <p
+          className="fazer"
+        >
+           Afastar a vítima de lugares perigosos, como por exemplo, áreas com piscina e com objetos cortantes.
+        </p>
+        <p
+          className="fazer"
+        >
+           Retirar objetos pessoais como: óculos, colares, anéis etc...
+        </p>
+        <p
+          className="fazer"
+        >
+           Proteger a cabeça, mas deixando-a livre para agitar-se à vontade.
+        </p>
+        <p
+          className="fazer"
+        >
+           Manter a vítima de barriga para cima (decúbito dorsal) e a cabeça lateralizada, para evitar engasgos.
+        </p>
+        <p
+          className="fazer"
+        >
+           Proteger a boca, observando se a língua não está sendo mordida. Caso os dentes estejam cerrados, não forçar a abertura da boca.
+        </p>
+        <p
+          className="fazer"
+        >
+           Afrouxar as roupas, se necessário.
+        </p>
+        <p
+          className="fazer"
+        >
+           Observar a respiração durante e após a crise.
+        </p>
+        <p
+          className="fazer"
+        >
+           Encaminhar ao serviço de saúde, após a crise.
+        </p>
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="span12"
+            >
+              <div
+                className="solidline"
+              />
+            </div>
+          </div>
+        </div>
+        <h5
+          className="atitudes"
+        >
+           
+          <strong>
+            O que não fazer:
+          </strong>
+        </h5>
+        <p
+          className="fazer"
+        >
+           Não jogar água no rosto da vítima ou oferecer-lhe algo para cheirar durante a crise.
+        </p>
+        <p
+          className="fazer"
+        >
+          Não introduzir os dedos, mão ou qualquer tipo de objeto no interior da boca do indivíduo durante a convulsão.
+        </p>
+        <p
+          className="fazer"
+        >
+          É fundamental procurar assistência médica no primeiro episódio de convulsão da vida do indivíduo a fim de estabelecer um diagnóstico preciso e tratamento adequado.
+        </p>
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="span12"
+            >
+              <div
+                className="solidline"
+              />
+            </div>
+          </div>
+        </div>
+        <h5
+          className="atitudes"
+        >
+          <strong>
+            Procure serviço de emergência - SAMU 192 se:
+          </strong>
+        </h5>
+        <p
+          className="fazer"
+        >
+           Ocorrer convulsão por motivo desconhecido.
+        </p>
+        <p
+          className="fazer"
+        >
+           A convulsão durar mais de cinco minutos.
+        </p>
+        <p
+          className="fazer"
+        >
+           A vítima não recuperar-se rapidamente ou apresentar novo episódio de convulsão.
+        </p>
+        <p
+          className="fazer"
+        >
+           A vítima apresentar dificuldade respiratória.
+        </p>
+        <p
+          className="fazer"
+        >
+           A vítima estiver grávida.
+        </p>
+        <p
+          className="fazer"
+        >
+           A vítima apresentar outros problemas médicos.
+        </p>
+        <p
+          className="fazer"
+        >
+           Houver qualquer sinal de trauma.
+        </p>
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="span12"
+            >
+              <div
+                className="solidline"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="margin-img"
+        >
+          <img
+            alt="Dicas"
+            className="Dicas de Primeiros Socorros"
+            src={[Function]}
+          />
+        </div>
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="span12"
+            >
+              <div
+                className="solidline"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Nossas Páginas
+            </h3>
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  href="/quemsomos"
+                  onClick={[Function]}
+                >
+                  Quem somos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/falandosobre"
+                  onClick={[Function]}
+                >
+                  Falando Sobre
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/socorros"
+                  onClick={[Function]}
+                >
+                  Primeiro Socorros
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Fale conosco
+            </h3>
+            <p>
+              <i
+                className="icon-phone"
+              />
+               (11) 98232-6391 
+              <br />
+              <i
+                className="icon-envelope-alt"
+              />
+               camilam.oliveiralima@gmail.com
+            </p>
+          </div>
+        </div>
+        <div
+          className="span4"
+        >
+          <div
+            className="widget"
+          >
+            <h3
+              className="widgetheading"
+            >
+              Redes Sociais
+            </h3>
+            <ul
+              className="social-network"
+            >
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                >
+                  <i
+                    className="icon-facebook icon-square"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  data-placement="bottom"
+                  href="https://www.linkedin.com/in/camilamlima/"
+                  title="Linkedin"
+                >
+                  <i
+                    className="icon-linkedin icon-square"
+                  />
+                </a>
+              </li>
+              <span>
+                &Camila Lima - Todos os direitos reservados.
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button
+    className="panico"
+    onClick={[Function]}
+    type="button"
+  >
+     Pânico
+  </button>
+</div>
+`;
