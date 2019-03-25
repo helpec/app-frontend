@@ -5,7 +5,38 @@ import InputForm from 'components/InputForm';
 import { userActions } from 'engine/actions';
 
 class ResetPasswordPage extends Component {
+
+  constructor(props) {
+        super(props);
+
+       this.state = {
+            email: '',
+            submitted: false
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.saveValue = this.saveValue.bind(this);
+  }
+
+  saveValue(data) {
+      this.setState(data);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    this.setState({ submitted: true });
+    const { email } = this.state;
+    const { dispatch } = this.props;
+    if ( email ) {
+        dispatch(userActions.resetPassword(email));
+    }
+  }
+
+
   render() {
+    const { resetIn } = this.props;
+    const { email, submitted } = this.state;
     return (
         <Fragment>
             <BaseProfilePage title="Resetar Senha" notUserNav={true}>
@@ -14,16 +45,13 @@ class ResetPasswordPage extends Component {
                 <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
               </div>
               <div className="modal-body">
-                <form className="form-horizontal">
-                  <div className="control-group">
-                    <label className="control-label" for="inputResetEmail">Email</label>
-                    <div className="controls">
-                      <input type="text" id="inputResetEmail" placeholder="Email" />
-                    </div>
-                  </div>
+                <form className="form-horizontal" onSubmit={this.handleSubmit}>
+                  <InputForm name='email' label="E-mail" value={email}
+                    submitted={submitted} callbeack={this.saveValue}/>
+
                   <div className="control-group">
                     <div className="controls">
-                      <button type="submit" className="btn">Reset password</button>
+                      <button type="submit" className="btn" disabled={(resetIn ? 'disabled' : '')}>Reset password</button>
                     </div>
                     <p className="aligncenter margintop20">
                       We will send instructions on how to reset your password to your inbox
@@ -36,7 +64,11 @@ class ResetPasswordPage extends Component {
     );
   }
 }
+function mapStateToProps(state) {
+    const { resetIn } = state.reset_password;
+    return {
+        resetIn
+    };
+}
 
-export default ResetPasswordPage;
-
-
+export default connect(mapStateToProps)(ResetPasswordPage);

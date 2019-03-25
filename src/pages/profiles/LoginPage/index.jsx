@@ -17,10 +17,10 @@ class LoginPage extends Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.saveValue = this.saveValue.bind(this);
   }
-  handleChange(e) {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
+  saveValue(data) {
+      this.setState(data);
   }
 
   handleSubmit(e) {
@@ -44,24 +44,11 @@ class LoginPage extends Component {
 
           <div className="modal-body">
             <form className="form-horizontal" onSubmit={this.handleSubmit.bind(this)}>
-              <div className={'control-group' + (submitted && !username ? ' has-error' : '')}>
-                <label className="control-label" htmlFor="username">Username</label>
-                <div className="controls">
-                  <input type="text" name='username' placeholder="E-mail" value={username} onChange={this.handleChange} />
-                  {submitted && !username &&
-                    <div className="help-block">E-mail é obrigatório</div>
-                  }
-                </div>
-              </div>
-              <div className={'control-group' + (submitted && !password ? ' has-error' : '')}>
-                <label className="control-label" htmlFor="password">Password</label>
-                <div className="controls">
-                  <input type="password" name="password" placeholder="Senha" value={password} onChange={this.handleChange} />
-                  {submitted && !password &&
-                    <div className="help-block">Senha é obrigatória</div>
-                  }
-                </div>
-              </div>
+              <InputForm name='username' label="Username" value={username}
+                submitted={submitted} callbeack={this.saveValue}/>
+              <InputForm name='password' label="Senha" value={password}
+                submitted={submitted} callbeack={this.saveValue}/>
+
               <div className="control-group">
                 <div className="controls">
                   <button type="submit" className="btn" disabled={(loggingIn ? 'disabled' : '')} >Enviar</button>

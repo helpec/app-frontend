@@ -9,6 +9,7 @@ export const userActions = {
     register,
     profileEdit,
     getById,
+    resetPassword
 };
 
 function login(username, password) {
@@ -106,4 +107,28 @@ function profileEdit(user) {
     function request(user) { return { type: userConstants.PROFILE_EDIT_REQUEST } }
     function success(user) { return { type: userConstants.PROFILE_EDIT_SUCCESS, user } }
     function failure(error) { return { type: userConstants.PROFILE_EDIT_FAILURE, error } }
+}
+
+function resetPassword(email){
+  return dispatch => {
+      dispatch(request(email));
+
+      userService.resetPassword(email)
+          .then(
+              user => {
+                  dispatch(success(user));
+                  // history.push('/profile');
+                  dispatch(alertActions.success('Registration successful'));
+
+              },
+              error => {
+                  dispatch(failure(error.toString()));
+                  dispatch(alertActions.error(error.toString()));
+              }
+          );
+  };
+
+  function request(email) { return { type: userConstants.RESET_PASSWORD_REQUEST, email } }
+  function success(user) { return { type: userConstants.RESET_PASSWORD_SUCCESS, user } }
+  function failure(error) { return { type: userConstants.RESET_PASSWORD_FAILURE, error } }
 }

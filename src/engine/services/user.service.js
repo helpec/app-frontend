@@ -6,6 +6,7 @@ export const userService = {
     register,
     getById,
     update,
+    resetPassword,
 };
 
 function login(username, password) {
@@ -58,6 +59,16 @@ function update(user) {
         method: 'PUT',
         headers: { ...authHeader(), 'Content-Type': 'application/json' },
         body: JSON.stringify(user)
+    };
+
+    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);;
+}
+
+function resetPassword(email) {
+    const requestOptions = {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({email})
     };
 
     return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);;
