@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
 
 import BaseProfilePage from 'pages/bases/BaseProfilePage';
 import InputForm from 'components/InputForm';
@@ -14,7 +15,7 @@ class ResetPasswordPage extends Component {
             submitted: false
         };
 
-        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.saveValue = this.saveValue.bind(this);
   }
 

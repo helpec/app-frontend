@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import BasePage from 'pages/bases/BasePage';
+import InputForm from 'components/InputForm';
 import { userActions } from 'engine/actions';
 
 
@@ -16,7 +17,6 @@ class LoginPage extends Component {
             submitted: false
         };
 
-        this.handleChange = this.handleChange.bind(this);
         this.saveValue = this.saveValue.bind(this);
   }
   saveValue(data) {

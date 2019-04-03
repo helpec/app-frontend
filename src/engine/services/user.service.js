@@ -66,12 +66,12 @@ function update(user) {
 
 function resetPassword(email) {
     const requestOptions = {
-        method: 'PUT',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({email})
     };
 
-    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/rest-auth/password/reset/`, requestOptions).then(handleResponse);;
 }
 
 
