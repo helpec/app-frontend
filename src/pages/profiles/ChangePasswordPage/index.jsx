@@ -5,13 +5,14 @@ import BaseProfilePage from 'pages/bases/BaseProfilePage';
 import InputForm from 'components/InputForm';
 import { userActions } from 'engine/actions';
 
-class ResetPasswordPage extends Component {
+class ChangePasswordPage extends Component {
 
   constructor(props) {
         super(props);
 
        this.state = {
-            email: '',
+            password1: '',
+            password2: '',
             submitted: false
         };
 
@@ -27,32 +28,31 @@ class ResetPasswordPage extends Component {
     e.preventDefault();
 
     this.setState({ submitted: true });
-    const { email } = this.state;
+    const { password1, password2 } = this.state;
     const { dispatch } = this.props;
-    if ( email ) {
-        dispatch(userActions.resetPassword(email));
+    if ( password1 == password2 ) {
+        dispatch(userActions.changePassword(password1));
     }
   }
 
 
   render() {
-    const { resetIn } = this.props;
-    const { email, submitted } = this.state;
+    const { changeIn } = this.props;
+    const { password1, password2, submitted } = this.state;
     return (
         <Fragment>
-            <BaseProfilePage title="Resetar Senha" notUserNav={true}>
+            <BaseProfilePage title="Alterar Senha" notUserNav={true}>
               <div className="modal-body">
                 <form className="form-horizontal" onSubmit={this.handleSubmit}>
-                  <InputForm name='email' label="E-mail" value={email}
-                    submitted={submitted} callbeack={this.saveValue}/>
+                    <InputForm name='password1' label="Senha" value={password1}
+                            submitted={submitted} callbeack={this.saveValue}/>
+                    <InputForm name='password2' label="Confirmar Senha" value={password2}
+                            submitted={submitted} callbeack={this.saveValue}/>
 
                   <div className="control-group">
                     <div className="controls">
-                      <button type="submit" className="btn" disabled={(resetIn ? 'disabled' : '')}>Reset password</button>
+                      <button type="submit" className="btn" disabled={(changeIn ? 'disabled' : '')}>Alterar senha</button>
                     </div>
-                    <p className="aligncenter margintop20">
-                      We will send instructions on how to reset your password to your inbox
-                    </p>
                   </div>
                 </form>
               </div>
@@ -62,10 +62,10 @@ class ResetPasswordPage extends Component {
   }
 }
 function mapStateToProps(state) {
-    const { resetIn } = state.reset_password;
+    const { changeIn } = state.change_password;
     return {
-        resetIn
+        changeIn
     };
 }
 
-export default connect(mapStateToProps)(ResetPasswordPage);
+export default connect(mapStateToProps)(ChangePasswordPage);

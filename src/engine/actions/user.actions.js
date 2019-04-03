@@ -132,3 +132,29 @@ function resetPassword(email){
   function success(user) { return { type: userConstants.RESET_PASSWORD_SUCCESS, user } }
   function failure(error) { return { type: userConstants.RESET_PASSWORD_FAILURE, error } }
 }
+
+function changePassword(password){
+  return dispatch => {
+      dispatch(request(password));
+
+      userService.changePassword(password)
+          .then(
+              user => {
+                  dispatch(success(user));
+                  dispatch(alertActions.success('Registration successful'));
+              },
+              error => {
+                  dispatch(failure(error.toString()));
+                  dispatch(alertActions.error(error.toString()));
+              }
+          );
+  };
+
+  function request(password) { return { type: userConstants.CHANGE_PASSWORD_REQUEST, password } }
+  function success(user) { return { type: userConstants.CHANGE_PASSWORD_SUCCESS, user } }
+  function failure(error) { return { type: userConstants.RCHANGE_PASSWORD_FAILURE, error } }
+}
+
+
+
+

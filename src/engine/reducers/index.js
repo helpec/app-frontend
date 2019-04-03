@@ -6,6 +6,7 @@ import { user_contact } from './userContact.reducer';
 import { registration } from './registration.reducer';
 import { savingProfile } from './savingProfile.reducer';
 import { reset_password } from './resetPassword.reducer';
+import { change_password } from './changePassword.reducer';
 
 
 const rootReducer = combineReducers({
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
   registration,
   savingProfile,
   reset_password,
+  change_password,
   alert
 });
 
