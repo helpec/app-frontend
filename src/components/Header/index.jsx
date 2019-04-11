@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import crypto from 'crypto';
 
-import { isAuthentication } from '../../engine/helpers';
+import { isAuthentication, getUser } from '../../engine/helpers';
 import './header.css'
 
 
 class Header extends Component {
-  
+
+  get_image_profile(){
+    let user = getUser();
+    let md5 = crypto.createHash('md5').update(
+      user.email || ""
+    ).digest('hex');
+    return `http://www.gravatar.com/avatar/${md5}?size=32&d=retro`;
+  }
+
   render() {
     return (
     <header>
@@ -14,12 +23,11 @@ class Header extends Component {
         <div className="row nomargin">
           <div className="span12">
             { isAuthentication() ? (
-              
               <div className="headnav">
 						    <ul className="navbar-right">
 				  				<li className="dropdown">
 					          <a href="#" className="dropdown-toggle profile-image" data-toggle="dropdown">
-					            <img src="http://placehold.it/30x30" className="img-circle special-img" alt="profile"/>
+					            <img src={this.get_image_profile()} className="img-circle special-img" alt="profile"/>
 					              Seu Perfil<b className="caret"></b>
 				            </a>
           					<ul className="dropdown-menu">
