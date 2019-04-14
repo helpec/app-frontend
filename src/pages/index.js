@@ -16,6 +16,7 @@ import OcorrenciaPage from './profiles/OcorrenciaPage';
 import UserContactPage from './profiles/UserContactPage';
 import UserContactEditPage from './profiles/UserContactEditPage';
 
+import ChangePasswordPage from './profiles/ChangePasswordPage';
 import Logout from './profiles/LogoutPage';
 import LoginPage from './profiles/LoginPage';
 import RegisterPage from './profiles/RegisterPage';
@@ -42,6 +43,7 @@ const Pages = {
   Logout,
   LoginPage,
   ResetPasswordPage,
+  ChangePasswordPage,
   RegisterPage,
   NotFound,
 };

@@ -9,7 +9,8 @@ export const userActions = {
     register,
     profileEdit,
     getById,
-    resetPassword
+    resetPassword,
+    changePassword
 };
 
 function login(username, password) {
@@ -152,7 +153,7 @@ function changePassword(password){
 
   function request(password) { return { type: userConstants.CHANGE_PASSWORD_REQUEST, password } }
   function success(user) { return { type: userConstants.CHANGE_PASSWORD_SUCCESS, user } }
-  function failure(error) { return { type: userConstants.RCHANGE_PASSWORD_FAILURE, error } }
+  function failure(error) { return { type: userConstants.CHANGE_PASSWORD_FAILURE, error } }
 }
 
 

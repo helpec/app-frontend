@@ -43,6 +43,7 @@ class App extends React.Component {
                 <Route exact path="/registro" component={Pages.RegisterPage}/>
                 <Route exact path="/reset-password" component={Pages.ResetPasswordPage}/>
                 <PrivateRoute exact path="/profile" component={Pages.ProfilePage} />
+                <PrivateRoute exact path="/profile/mudar-senha" component={Pages.ChangePasswordPage} />
                 <PrivateRoute exact path="/profile/edit" component={Pages.ProfileEditPage} />
                 <PrivateRoute exact path="/profile/contatos" component={Pages.UserContactPage} />
                 <PrivateRoute exact path="/profile/contatos/:contact_uid/" component={Pages.UserContactEditPage} />

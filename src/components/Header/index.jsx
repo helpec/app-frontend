@@ -32,6 +32,7 @@ class Header extends Component {
 				            </a>
           					<ul className="dropdown-menu">
           						<li><Link to="/profile"><i className="fa fa-cog"></i>Seu dados</Link></li>
+          						<li><Link to="/profile/mudar-senha"><i className="fa fa-key"></i>Mudar Senha</Link></li>
           						<li><Link to="/profile/sair"><i className="fa fa-sign-out"></i>Sair</Link></li>
           					</ul>
 				          </li>

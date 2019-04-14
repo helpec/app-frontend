@@ -7,6 +7,7 @@ export const userService = {
     getById,
     update,
     resetPassword,
+    changePassword,
 };
 
 function login(username, password) {
@@ -61,7 +62,7 @@ function update(user) {
         body: JSON.stringify(user)
     };
 
-    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/rest-auth/user/`, requestOptions).then(handleResponse);
 }
 
 function resetPassword(email) {
@@ -71,9 +72,21 @@ function resetPassword(email) {
         body: JSON.stringify({email})
     };
 
-    return fetch(`${config.apiUrl}/rest-auth/password/reset/`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/rest-auth/password/reset/`, requestOptions).then(handleResponse);
 }
 
+function changePassword(password){
+    const requestOptions = {
+        method: 'POST',
+        headers: { ...authHeader(), 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            "new_password1":password, 
+            "new_password2":password
+        })
+    };
+
+    return fetch(`${config.apiUrl}/rest-auth/password/change/`, requestOptions).then(handleResponse);    
+}
 
 function handleResponse(response) {
     return response.text().then(text => {
